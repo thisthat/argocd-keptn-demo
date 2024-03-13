@@ -4,14 +4,14 @@ metadata:
   name: cert-manager
 namespace: cert-manager
 
-# resources:
-# - https://github.com/cert-manager/cert-manager/releases/download/v1.11.5/cert-manager.crds.yaml
+resources:
+- https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
 
-helmCharts:
-- name: cert-manager
-  releaseName: cert-manager
-  namespace: cert-manager
-  version: 1.14.3
-  repo: https://charts.jetstack.io
-  valuesInline:
-    installCRDs: true
+# helmCharts:
+# - name: cert-manager
+#   releaseName: cert-manager
+#   namespace: cert-manager
+#   version: 1.14.3
+#   repo: https://charts.jetstack.io
+#   valuesInline:
+#     installCRDs: true
